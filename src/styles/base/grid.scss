@@ -1,0 +1,26 @@
+@import "vars";
+
+.container {
+  max-width: 1526px;
+  margin: 0 auto;
+
+  @media (max-width: $lg) {
+    max-width: 1310px;
+  }
+}
+
+.row {
+  display: flex;
+  column-gap: 20px;
+  row-gap: 40px;
+
+  @media (max-width: $sm) {
+    flex-direction: column;
+  }
+
+  & + & {
+    margin-top: 40px;
+  }
+}
+
+

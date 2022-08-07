@@ -1,0 +1,19 @@
+mixin partner(image, imageDescription, url)
+   a(href=url, target="_blank").partners__item
+       img(src=image alt=imageDescription).partners__logo
+
+section#partners.section
+    .section__layout.container
+        header.section__header
+            h2.section__title.title-h1
+                | Наші партнери
+        .section__content
+            .row.partners
+                // Партнёр 18000
+                +partner('images/partners/18000-logo.svg', '18000', 'https://18000.com.ua/')
+                // Партнёр provce
+                +partner('images/partners/pro-vse.jpeg', 'provce', 'https://provce.ck.ua/')
+                // Партнёр vikka
+                +partner('images/partners/vikna.gif', 'vikna', 'https://www.vikka.ua/')
+                // Партнёр ildana
+                +partner('images/partners/ildana.jpg', 'ildana', 'https://ildana.tv/')

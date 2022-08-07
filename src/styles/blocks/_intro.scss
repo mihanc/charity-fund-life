@@ -1,0 +1,71 @@
+@import "../base/vars";
+
+.intro {
+  padding-top: 116px;
+  background-image: url("../images/header.png");
+  background-size: cover;
+  position: relative;
+
+  @media (max-width: $sm) {
+    padding-top: 260px;
+    padding-bottom: 260px;
+    background-image: url("../images/header-mobile.png");
+  }
+
+  &__layout {
+    position: relative;
+    display: flex;
+    padding: 230px 30px 430px 30px;
+
+    @media (max-width: $sm) {
+      padding: 20px 16px;
+      display: none;
+    }
+  }
+
+  &__head {
+    max-width: 700px;
+  }
+
+  &__subtitle {
+    margin-top: 20px;
+  }
+
+  &__button {
+    display: inline-block;
+    margin-top: 40px;
+
+    @media (max-width: $sm) {
+      width: 100%;
+    }
+  }
+
+  &__image-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.intro-mobile {
+  padding: 20px 16px;
+  background-color: var(--color-yellow);
+
+  @media (min-width: $sm) {
+    display: none;
+  }
+
+  &__head {
+    max-width: 700px;
+  }
+
+  &__subtitle {
+    margin-top: 20px;
+  }
+
+  &__button {
+    display: inline-block;
+    margin-top: 40px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import "../base/vars";
+
+.title-h1 {
+  font-size: 60px;
+  line-height: 1.25;
+  font-weight: 600;
+
+  @media (max-width: $sm) {
+    font-size: 30px;
+  }
+}
+
+.title-h2 {
+  font-size: 40px;
+  line-height: 1.25;
+  font-weight: 600;
+
+  @media (max-width: $sm) {
+    font-size: 25px;
+  }
+}
+
+.subtitle {
+  font-size: 24px;
+  line-height: 1.5;
+
+  @media (max-width: $sm) {
+    font-size: 16px;
+  }
+}
+
+.paragraph {
+  font-size: 24px;
+  line-height: 36px;
+
+  & + & {
+    margin-top: 25px;
+  }
+
+  @media (max-width: $sm) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

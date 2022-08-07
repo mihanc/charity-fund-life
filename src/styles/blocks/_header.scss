@@ -1,0 +1,33 @@
+@import "../base/vars";
+
+.header {
+  filter: drop-shadow(0px 0px 35px rgba(51, 63, 96, 0.28));
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 3;
+
+  &_scrolled {
+    background-color: var(--color-white);
+  }
+
+  &__layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+  }
+
+  &__logo-wrapper {
+    max-width: 190px;
+
+    @media (max-width: $sm) {
+      max-width: 130px;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+  }
+}

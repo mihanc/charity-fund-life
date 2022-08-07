@@ -1,0 +1,63 @@
+@import "../base/vars";
+
+.slider {
+  &__items {
+    display: flex;
+    justify-content: center;
+    max-width: 560px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &__item {
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s linear;
+    border-radius: 8px;
+    overflow: hidden;
+
+    &_current .slider__link {
+      display: block;
+    }
+
+    &_prev {
+      position: absolute;
+      z-index: 1;
+      left: 100px;
+      transform: translateX(-50%) scale(0.8);
+      filter: blur(7px) brightness(0.8);
+    }
+
+    &_next {
+      position: absolute;
+      z-index: 1;
+      right: -60px;
+      transform: scale(0.8);
+      filter: blur(5px) brightness(0.8);
+
+      @media (max-width: $sm) {
+        right: -4px;
+      }
+    }
+  }
+
+  &__link {
+    display: none;
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+
+  &__image {
+    width: 345px;
+    height: 468px;
+
+    @media (max-width: $sm) {
+      width: 180px;
+      height: 250px;
+    }
+  }
+}

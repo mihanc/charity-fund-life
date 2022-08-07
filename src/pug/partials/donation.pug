@@ -1,0 +1,28 @@
+mixin card(image, imageDescription, cost, desc, modifier, href)
+    article(class=modifier)
+        .card__layout
+            .card__image-wrapper
+                img(src=image alt=imageDescription).card__image
+            .card__body
+                .card__title.title-h2= cost
+                .card__description.subtitle= desc
+                a(href=href).card__button.button
+                    | Допомогти
+
+section#donation.section
+    .section__layout.container
+        header.section__header
+            h2.section__title.title-h1
+                | Робити добро легко — стань доброчинцем
+            p.section__subtitle.subtitle
+                | Завдяки навіть невеликій сумі, яку ти витрачаєш щодня на дрiбнички, добрих справ стає більше!
+            p.section__subtitle
+                | Звертаємо увагу, що жертвуючи кошти ви погоджуєтесь з нашими&nbsp;
+                a(href="/terms-and-conditions.html") умовами та угодами
+        .section__content
+            .row
+                +card('images/help-sm.jpg', 'small help', '50 грн', 'Нагодують 1 собаку/2 кота', 'card card_yellow', 'https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJhbW91bnQiOiI1MCIsImN1cnJlbmN5IjoiVUFIIiwiZGVzY3JpcHRpb24iOiLQn9C+0LbQtdGA0YLQstCwIiwicHVibGljX2tleSI6ImkxODg0MzYzMzAzNCIsImxhbmd1YWdlIjoidWsifQ==&signature=ZI5Re4DQzUW28zA4KIm2bLHerIg=')
+                +card('images/help-md.jpg', 'medium help', '100 грн', 'Нагодують 2 собаки/4 кота', 'card card_blue', 'https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJhbW91bnQiOiIxMDAiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0J/QvtC20LXRgNGC0LLQsCIsInB1YmxpY19rZXkiOiJpMTg4NDM2MzMwMzQiLCJsYW5ndWFnZSI6InVrIn0=&signature=CUr+ND2TPeE09qwLCjVDUaMfKq8=')
+                +card('images/help-lg.jpg', 'large help', '200 грн', 'Нагодують 4 собак/8 котів', 'card card_purple', 'https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJhbW91bnQiOiIyMDAiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0J/QvtC20LXRgNGC0LLQsCIsInB1YmxpY19rZXkiOiJpMTg4NDM2MzMwMzQiLCJsYW5ndWFnZSI6InVrIn0=&signature=jRplfvL2KrWh0gnckMkM5cq+peA=')
+
+

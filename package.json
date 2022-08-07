@@ -1,0 +1,36 @@
+{
+  "name": "charity-fund-life",
+  "version": "1.0.0",
+  "description": "Website of the Life Charitable Foundation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihanc/charity-fund-life.git"
+  },
+  "author": "mihanc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mihanc/charity-fund-life/issues"
+  },
+  "homepage": "https://github.com/mihanc/charity-fund-life#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "gulp-imagemin": "^7.1.0",
+    "gulp-pug": "^4.0.1",
+    "imagemin-pngquant": "^9.0.2"
+  }
+}

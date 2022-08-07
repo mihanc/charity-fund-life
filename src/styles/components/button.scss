@@ -1,0 +1,25 @@
+@import "../helpers/variables";
+@import "../base/vars";
+
+.button {
+  border: none;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 15px 40px;
+  border-radius: 4px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+
+  @media (max-width: $sm) {
+    font-size: 16px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+}

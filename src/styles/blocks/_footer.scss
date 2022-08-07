@@ -1,0 +1,31 @@
+@import "../base/vars";
+
+.footer {
+  background-image: radial-gradient(var(--gradient-yellow));
+
+  &__layout {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 60px;
+
+    @media (max-width: $sm) {
+      padding-bottom: 30px;
+      flex-direction: column;
+    }
+  }
+
+  &__copyright,
+  &__author {
+    @media (max-width: $sm) {
+      font-size: 14px;
+    }
+  }
+
+  &__copyright {
+    @media (max-width: $sm) {
+      margin-bottom: 8px;
+    }
+  }
+}

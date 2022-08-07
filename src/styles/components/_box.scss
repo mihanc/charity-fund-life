@@ -1,0 +1,32 @@
+@import "../base/vars";
+
+.box {
+  display: flex;
+  padding: 45px 40px;
+  background: radial-gradient(197.35% 173.46% at 86.11% 100%, #FFEE56 0%, #FFF494 100%);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  column-gap: 40px;
+
+  @media (max-width: $sm) {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  &__field {
+    width: 100%;
+
+    @media (max-width: $sm) {
+      margin-top: 15px;
+    }
+  }
+
+  &__button {
+    flex: 1;
+
+    @media (max-width: $sm) {
+      margin-top: 15px;
+    }
+  }
+}
